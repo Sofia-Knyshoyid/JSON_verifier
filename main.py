@@ -1,5 +1,6 @@
 """
-This program contains method verifying the input JSON data.
+Base module (describes logic of the program)
+It contains method verifying the input JSON data.
 
 Input data format is defined as:
 AWS::IAM::Role Policy
@@ -33,8 +34,11 @@ JSON example:
 
 """
 
-
 import json
+
+
+
+
 
 def verify_json_data(file):
     with open(file, 'r') as f:
@@ -50,3 +54,8 @@ def verify_json_data(file):
                 return False
     return True
 
+
+
+if __name__ == "__main__":
+    file_path = input("Please enter the path to your JSON file: ")
+    print(verify_json_data(file_path))
