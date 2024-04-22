@@ -49,23 +49,20 @@ Case 6: many Statements - one Resource (is a  single *)
 
 Case 7: Resource is not a string:
     Example: "Resource": 0
-    Expected output:
-    Program output:
+    raising TypeError with corresponding message
 
 Case 8: 1 Statement - many Resources (for instance list):
     Example: "Resource": ["sth_else", "*"]
-    Expected output:
-    Program output:
+    raising ValueError with corresponding message
 
 Case 9: Invalid path:
-    Expected output;
-    Program output:
+    raising FileNotFoundError with corresponding message
 
 Case 10: big JSON File (can't load the whole file at once):
-    Expected output:
-    Program output:
+    problem solved by loading file line by line
 
 Case 11: Invalid JSON file (empty, invalid syntax)
+    raising raise json.JSONDecodeError with corresponding message
 
 
 
