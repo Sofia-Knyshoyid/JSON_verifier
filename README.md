@@ -55,7 +55,7 @@ The boolean output of this JSON classifier is based on a single condition.
 
 ## Running the program
 To use functionality of the JSON classifier:
-1. Navigate to the directory where You saved main.py
+1. Navigate to the directory where you saved main.py
 2. Run the main.py module and write the path to your JSON file:
 ```console
 JSON_verifier:~$ python3 main.py
